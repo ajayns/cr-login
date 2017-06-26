@@ -9,8 +9,12 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-router.post('/', function(req, res, next) {
-  console.log(req.body);
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/submit', function(req, res, next) {
+  console.log(req.param('username'));
 });
 
 const port = process.env.PORT || '3000';
