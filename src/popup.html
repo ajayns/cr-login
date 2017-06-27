@@ -1,8 +1,14 @@
+<link rel="stylesheet" href="styles.css">
 
-<p id="currentLink">Loading ...</p>
-<hr />
-<input type="text" id="un" placeholder="username">
-<input type="password" id="pwd" placeholder="password">
-<button id="submit">Submit</button>
-<p id="res"></p>
+<div>
+	<form>
+		<label for="un">Username</label>
+		<input type="text" id="un" placeholder="username" required autofocus>
+		<label for="pwd">Password</label>
+		<input type="password" id="pwd" placeholder="password" required>
+		<input type="submit" id="submit" value="Submit">
+	</form>
+	<p id="res"></p>
+</div>
+
 <script type="text/javascript" src="popup.js"></script>
