@@ -13,7 +13,7 @@
         "128": "icon.png"
       },
       "permissions": [
-          "tabs", "http://localhost:3000/*", "activeTab"
+          "tabs", "http://localhost:3000/*", "activeTab", "storage"
         ],
 			"content_scripts": [
         {

@@ -8,10 +8,11 @@ function save() {
 	var un = document.getElementById("un").value;
 	var pwd = document.getElementById("pwd").value;
 
-	localStorage.setItem("username", un);
-	localStorage.setItem("password", pwd);
-	
-	var temp = localStorage.getItem("username");
-	
-	document.getElementById("res").innerHTML = temp;
+	chrome.storage.sync.set({
+		'username': un,
+		'password': pwd
+	}, function () {
+		document.getElementById("res").innerHTML = "Saved";
+	});
+
 }
