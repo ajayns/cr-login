@@ -1,7 +1,7 @@
 chrome.storage.sync.get(['username', 'password'], function (res) {
 	if (res.username != undefined) {
-		document.getElementById('username').value = res.username;
-		document.getElementById('password').value = res.password;
-		document.getElementById('logincaption').submit();
+		document.getElementsByName('username')[0].value = res.username;
+		document.getElementsByName('password')[0].value = res.password;
+		document.getElementById('logincaption').click();
 	}
 });
