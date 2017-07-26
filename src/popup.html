@@ -1,14 +1,19 @@
 <link rel="stylesheet" href="styles.css">
 
-<div>
-	<form>
-		<label for="un">Username</label>
-		<input type="text" id="un" placeholder="username" required autofocus>
-		<label for="pwd">Password</label>
-		<input type="password" id="pwd" placeholder="password" required>
-		<input type="submit" id="submit" value="Submit">
-	</form>
-	<p id="res"></p>
+<div id="container">
+	<div class="form">
+		<form id="input">
+			<p>Enter Cyberroam login credentials:</p>
+			<input type="text" id="un" placeholder="username" required="required" autofocus>
+			<input type="password" id="pwd" placeholder="password" required="required">
+			<input type="submit" id="submit" value="Submit" class="button">
+		</form>
+		<div id="saved">
+			<h1>&#x2714;</h1>
+			<br/>
+			<h2>Saved</h2>
+		</div>
+	</div>
 </div>
 
 <script type="text/javascript" src="popup.js"></script>

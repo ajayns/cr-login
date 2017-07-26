@@ -12,7 +12,8 @@ function save() {
 		'username': un,
 		'password': pwd
 	}, function () {
-		document.getElementById("res").innerHTML = "Saved";
+		document.getElementById("saved").style.display = "block";
+		document.getElementById("input").style.display = "none";
 	});
 
 }
