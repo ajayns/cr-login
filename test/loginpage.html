@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>Sardar Vallabhbhai National Institute Of Technology, Surat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <script language="JavaScript" src="cyberoamAjax.js"></script>
+    <script language="JavaScript">
+        var message = "";
+        var status = "LOGIN";
+        var ack = "";
+        var userName = "";
+        userName = userName.replace(new RegExp("''", 'g'), "'")
+        var password = "";
+        var timer = "";
+        var liveReqTimeInJS = 180;
+    </script>
+    <script language="JavaScript" src="httpclient.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/css/captiveportalForIE.css" /><![endif]-->
+    <link rel="stylesheet" href="captiveportal.css">
+    <script language="JavaScript">
+        document.title = 'Sardar Vallabhbhai National Institute Of Technology, Surat';
+        var port = 8282;
+        var httpsport = 443;
+        var redirectTo = '';
+        var preserveCaptivePortal = '';
+        var guestUserEnabled = false;
+        var enablefullcustomization = false;
+        var myAccountLink = true;
+    </script>
+</head>
+
+<body class="bodyclass" style="background:#FFFFFF;font-family: Arial;font-size: 12px;color:#565656;">
+    <div class="headerdiv">
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td style="color:#565656" valign="middle" align="center"><font style="font-size: 12px; font-family:tahoma;"><b>Welcome to the SVNIT Surat Cyberoam Web Client Portal!</b></font>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <form name="frmHTTPClientLogin" target="_parent" method="post" onsubmit="return checkSubmit();" action="httpclient.html">
+        <input value="191" name="mode" type="hidden">
+        <div class="maindiv" align="center">
+            <div class="imageblock" bgcolor="#FFFFFF" style="color: #336699">
+                <div class="image">
+                    <a href="http://www.svnit.ac.in/" target="_blank"><img id="logo" name="logo" src="uploadedwebclientlogo.jpg" border="0">
+                    </a>
+                </div>
+                <div class="headerclass" id="loginboxtitle" style="background-color:#FFFFFF;color: #336699;">Sardar Vallabhbhai National Institute Of Technology, Surat</div>
+                <div class="clear"></div>
+            </div>
+            <div class="datablock">
+                <div id="msgDiv" class="msgdiv" align="left"><font class="note"><xmp style="white-space: normal;margin:0px;font-family:tahoma,arial,san-serif;">You have successfully logged in</xmp></font>
+                </div>
+                <div class="tablecss">
+                    <table align="center" border="0" cellpadding="1" cellspacing="1">
+                        <tbody>
+                            <tr id="usernamelbl">
+                                <td style="color:#565656;text-align:left;">
+                                    <label>Username</label>
+                                </td>
+                            </tr>
+                            <tr id="usernametxt">
+                                <td>
+                                    <input value="u16co091" readonly="readonly" name="username" maxlength="50" class="textbox" type="text">
+                                </td>
+                            </tr>
+                            <tr id="passwordlbl">
+                                <td style="color:#565656;text-align:left;">
+                                    <label>Password</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input readonly="readonly" maxlength="60" name="password" autocomplete="off" class="textbox" type="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input name="btnSubmit" value="Logout" id="logincaption" class="button" style="color:#565656" type="submit">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="redirectcss">
+                    <ul>
+                        <li class="liformyaccount" id="accountAncLI" style="color: rgb(86, 86, 86);"><a href="http://172.50.1.1:8282/corporate/webpages/login.jsp?webclient=myaccount" style="color: rgb(86, 86, 86); text-decoration: none;" target="_new" id="accountAnc">Click here for User My Account</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li id="registerLinkLI" class="liforusername" style="color: rgb(86, 86, 86); list-style: outside none none;"><a href="#" style="color: rgb(86, 86, 86); text-decoration: none; display: none;" id="registerLink">Click here to get a username to access the Internet</a>
+                        </li>
+                    </ul>
+                    <div id="redirecturl" style="font-size: 11px;font-weight: bold;margin-left: -25px;"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="noteblock">
+                <div class="notefont" style="display:none;"> Note : Do not close this window, closing this window will log you out. </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="headerdiv">
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td style="color:#565656" height="50px;" valign="middle" align="center">Central Computer Centre</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script language="JavaScript">
+            loginValue = 'Login';
+            logoutValue = 'Logout';
+            setHREF();
+        </script>
+        <div id="arrivedMsgDiv" style="display:none"></div>
+    </form>
+    <script language="Javascript">
+        document.forms[0].password.setAttribute("maxLength", 60);
+    </script>
+</body>
+
+</html>
