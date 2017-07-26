@@ -13,12 +13,12 @@
         "128": "icon.png"
       },
       "permissions": [
-          "tabs", "http://localhost:3000/*", "activeTab", "storage"
+          "tabs", "http://172.50.1.1:8090/*", "activeTab", "storage"
         ],
 			"content_scripts": [
         {
             "matches": [
-                "http://localhost:3000/*"
+                "http://172.50.1.1:8090/*"
             ],
             "js": [
                 "login.js"
