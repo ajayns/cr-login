@@ -1,9 +1,9 @@
 
     {
-      "name": "Extension Menu",
+      "name": "Cyberroam Auto-Login",
       "version": "1.0",
       "manifest_version": 2,
-      "description": "My extension",
+      "description": "An extension that logins into your cyberroam creds saved as soon the page loads each time.",
       "browser_action": {
         "default_icon": "icon.png",
         "default_menu": "Menu",
