@@ -1,11 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
 
 #container {
   width: 360px;
 }
 
 .form {	
-  font-family: "Roboto", sans-serif;
   position: relative;
   z-index: 1;
   background: #FFFFFF;
