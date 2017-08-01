@@ -28,7 +28,7 @@ input {
 .button {
   text-transform: uppercase;
   outline: 0;
-  background: #4CAF50 !important;
+  background: #0038A8 !important;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -39,7 +39,7 @@ input {
   cursor: pointer;
 }
 .button:hover, .button:active, .button:focus {
-  background: #43A047 !important;
+  background: #082567 !important;
 }
 h1, h2 {
 	display: inline;
